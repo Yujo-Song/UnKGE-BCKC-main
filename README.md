@@ -1,8 +1,8 @@
 # README
 
-# UAGTF
+# UnKGE-BCKC
 
-## Install
+## Installation
 
 Make sure your local environment has the following installed:
 
@@ -16,13 +16,15 @@ sklearn == 1.3.2
 scipy == 1.10.1
 tqdm
 ```
+## Pre-trained Model Preparation
+You can download the bert-base-uncased model file from https://huggingface.co/ and place it in path `./bert_file/bert-base-uncased`​ directory.
 
 ## Run
 
 ```undefined
 python main_{dataset}.py
 ```
-You can change the parameters in the `main_{dataset}.py`​ file to control the training process, and the final results are saved in folder `/trained_models/{dataset}/{model_name}`​.
+You can change the parameters in the `main_{dataset}.py`​ file to control the training process, and the final results are saved in folder `./trained_models/{dataset}/{model_name}`​.
 
 ## Test
 
@@ -32,4 +34,4 @@ python main_{dataset}.py --only_test
 
 You must use ` --only_test`​ to choose mode
 
-You must place the `model.pt`​ file in the `/trained_models/{dataset}/checkpoint`​ directory.
+You must place the `model.pt`​ file in the `./trained_models/{dataset}/checkpoint`​ directory.
